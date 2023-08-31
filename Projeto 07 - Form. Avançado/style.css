@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 1440px;
+    height: 1930px;
+}
+
+body {
+    background: #BFD7E4;
+}
+
+body, input, textarea, select {
+    color: #4E4958;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+body::before {
+    content: '';
+    background: #293241;
+    width: 1440px;
+    height: 465px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 107px;
+}
+
+header h1, .top legend {
+    color: #FFF;
+    font-family: Staatliches;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header p {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 2px;
+    width: 391px;
+    height: 46px;
+}
+
+header img {
+    margin-bottom: 32px;
+}
+
+span {
+    color: #C1BCCC;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+.top {
+    border-radius: 20px 20px 0px 0px;
+    background: #F67669;
+    width: 750px;
+    height: 133px;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top legend {
+    color: #FFF;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+form {
+    border-radius: 0px 0px 20px 20px;
+    background: #FFF;
+    width: 750px;
+    min-height: 1075px;
+    padding: 63px;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset legend {
+    color: #253B51;
+    font-family: Staatliches;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px; 
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+    margin-top: 32px;
+    padding-bottom: 8px;
+}
+
+.input-wrapper input, textarea, select {
+    border-radius: 8px;
+    border: 1px solid var(--back-lines-in-white, #E6E6F0);
+    background: var(--shapes-02, #FAFAFC);
+
+    height: 55px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-wrapper label span:hover {
+    color: #4f4e52;
+}
+
+input, select {
+    padding: 5px 20px;
+}
+
+.two-col {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 15px;
+}
+
+.two-col input{
+    width: 300px;
+}
+
+.input-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+  
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+}
+
+textarea {
+    appearance: none;
+    height: 160px;
+    padding: 5px 10px;
+}
+
+.three-col {
+    display: flex;
+    gap: 10px;
+}
+
+.three-col input {
+    text-align: center;
+}
+  
+input[type=date] {
+   width: 300px;
+   margin-right: 22px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+   display: none;
+}
+
+.checkbox-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+  
+.checkbox-wrapper label {
+    margin: 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+  
+.checkbox-wrapper input {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+  
+.checkbox-wrapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+}
+  
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1807_14)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1807_14'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+  
+.checkbox-wrapper input:focus + label::before {
+    outline: 2px solid black;
+}
+
+button {
+    display: flex;
+    width: 622px;
+    height: 51px;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: Staatliches;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+    border-radius: 8px;
+    border: none;
+    background: #F67669;
+
+    margin-top: 63px;
+}
+
+button:hover {
+    background: #f05847;
+    cursor: pointer;
+}
+
+input:invalid {
+    border: 1px solid #FF1010;
+}
